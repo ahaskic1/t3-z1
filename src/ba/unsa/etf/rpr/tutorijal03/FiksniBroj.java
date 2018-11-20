@@ -7,10 +7,17 @@ public class FiksniBroj extends TelefonskiBroj {
         this.grad=grad;
         this.broj=broj;
     }
-
+    public String getGrad(){
+        return grad.s   ;
+    }
+    public String getBroj(){
+        return broj;
+    }
     @Override
     public String ispisi() {
-        return null;
+        String vrati= getGrad();
+        vrati+="/"+getBroj();
+        return vrati;
     }
 
     @Override
