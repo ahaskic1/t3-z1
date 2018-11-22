@@ -8,7 +8,7 @@ public class FiksniBroj extends TelefonskiBroj {
         this.broj=broj;
     }
     public String getGrad(){
-        return grad.s   ;
+        return grad.s;
     }
     public String getBroj(){
         return broj;
@@ -22,6 +22,19 @@ public class FiksniBroj extends TelefonskiBroj {
 
     @Override
     public int hashCode() {
-        return 0;
+        switch (grad){
+            case SARAJEVO: return 1;
+            case BIHAC: return 2;
+            case BRCKO: return 3;
+            case LIVNO: return 4;
+            case TUZLA: return 5;
+            case MOSTAR: return 6;
+            case ZENICA: return 7;
+            case GORAZDE: return 8;
+            case ORASIJE: return 9;
+            case TRAVNIK: return 10;
+            case SIROKIBRIJEG: return 11;
+            default: return 0;
+        }
     }
 }
